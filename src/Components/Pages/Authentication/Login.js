@@ -23,11 +23,8 @@ const Login = () => {
 
       
       if (user) {
-        return (
-          <div>
-            <p>Signed In User: {user.email}</p>
-          </div>
-        );
+        
+        navigate('/')
       }
 
 
@@ -45,6 +42,8 @@ const Login = () => {
 
     const onSubmit = data => {
         console.log(data);
+        const token = data.password;
+       localStorage.setItem('accesstoken', token)
         signInWithEmailAndPassword(data.email, data.password)
         
     }
@@ -82,10 +81,10 @@ const Login = () => {
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text">Authentication Key</span>
                             </label>
                             <input type="password"
-                                placeholder="Your Password"
+                                placeholder="Authentication Key"
                                 className="input input-bordered w-full max-w-xs"
                                 {...register("password", {
                                     required: {
@@ -106,7 +105,7 @@ const Login = () => {
                          {SignInErrorMessage}
                         <input className='btn w-full max-w-xs btn-primary  ' type="submit" value='Login' />
                     </form>
-                    <p><small>New to Plumber? <Link className='text-primary font-bold' to='/register'>Create New Account</Link></small></p>
+                    <p><small>New to storyTeller? <Link className='text-primary font-bold' to='/register'>Create New Account</Link></small></p>
                 </div>
             </div>
         </div>

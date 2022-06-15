@@ -7,6 +7,7 @@ import Home from './Components/Pages/Home/Home';
 import Profile from './Components/Pages/Profile/Profile';
 import Required from '../src/Components/Pages/Authentication/Required';
 import AllNews from './Components/Pages/AllNews/AllNews';
+import Registration from './Components/Pages/Authentication/Registration';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
         <Route path='/news' element={<Required><AllNews></AllNews></Required>}>
 
         </Route>
-        <Route path='/login' element={<Login></Login>}>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Registration></Registration>}>
 
         </Route>
         <Route path='/profile' element={<Required><Profile></Profile></Required>}>

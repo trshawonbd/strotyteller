@@ -1,13 +1,33 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firbase.init';
 
 const Menubar = () => {
+    const [user, loading, error] = useAuthState(auth);
+    const navigate = useNavigate();
+    const logout = () => {
+        signOut(auth);
+         localStorage.removeItem('accesstoken');
+        navigate('/login');
+    };
 
     const navMenu = <>
-        <li className='font-bold'><Link to="/">Home</Link></li> 
-        <li className='font-bold'><Link to="/news">All News</Link></li>
-        <li className='font-bold'><Link to="/login">Login</Link></li>
-        <li className='font-bold'><Link to="/profile">Profile</Link></li>
+        {
+            user &&         <li className='font-bold'><Link to="/">Home</Link></li> 
+           
+            
+            
+           
+        }
+        {
+            user &&  <li className='font-bold'><Link to="/news">All News</Link></li>
+        }
+        {
+            user &&  <li className='font-bold'><Link to="/profile">Profile</Link></li>
+        }
+        <li className='font-bold'>{user ? <button onClick={logout} class="btn btn-ghost ">Sign Out</button> : <Link to="/login">Login</Link>}</li>
     </>
 
     return (
