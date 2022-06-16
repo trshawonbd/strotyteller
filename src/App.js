@@ -8,9 +8,12 @@ import Profile from './Components/Pages/Profile/Profile';
 import Required from '../src/Components/Pages/Authentication/Required';
 import AllNews from './Components/Pages/AllNews/AllNews';
 import Registration from './Components/Pages/Authentication/Registration';
+import NewsDetails from './Components/Pages/AllNews/NewsDetails';
+import useNews from './Components/Hooks/useNews';
 
 
 function App() {
+  const [allnews, setAllnews] = useNews()
   return (
     <div>
       <Menubar></Menubar>
@@ -20,9 +23,20 @@ function App() {
         </Required>}>
 
         </Route>
-        <Route path='/news' element={<Required><AllNews></AllNews></Required>}>
+        <Route path='/news' element={<Required><AllNews
+        allnews= {allnews}
+        ></AllNews></Required>}>
 
         </Route>
+
+        <Route path='/newsDetails/:name' element={
+          <Required>
+            <NewsDetails 
+            allnews = {allnews}
+            ></NewsDetails>
+          </Required>
+        }></Route>
+
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Registration></Registration>}>
 
