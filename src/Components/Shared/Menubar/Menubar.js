@@ -54,7 +54,7 @@ const Menubar = ({dark,setDark}) => {
             {navMenu}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">StoryTeller</a>
+        <Link to='/news' className="btn btn-ghost normal-case text-xl">StoryTeller</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
