@@ -26,8 +26,6 @@ const Registration = () => {
 
     }
 
-
-
     if (loading || updating) {
         return <Loading></Loading>
     }
@@ -38,12 +36,12 @@ const Registration = () => {
         SignInErrorMessage = <p className='text-red-500'><small>{error?.message || updateError?.message}</small></p>
     }
 
-
     const onSubmit = async data => {
         const token = data.password;
         await localStorage.setItem('accesstoken', token)
+        await localStorage.setItem('name', data.name)
+        await localStorage.setItem('email', data.email)
         await createUserWithEmailAndPassword(data.email, data.password);
-
         await updateProfile({ displayName: data.name });
         navigate('/');
 
@@ -51,7 +49,7 @@ const Registration = () => {
 
     }
     return (
-        <div className='flex h-content justify-center items-center'>
+        <div className='flex h-content justify-center items-center h-screen'>
             <div className="card w-96 bg-base-100 shadow-2xl">
                 <div className="card-body">
                     <h2 className="text-center text-2xl font-bold">Sign Up</h2>

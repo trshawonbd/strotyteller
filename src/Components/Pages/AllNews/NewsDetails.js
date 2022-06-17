@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate, useParams } from 'react-router-dom';
-import auth from '../../../firbase.init';
 import useNews from '../../Hooks/useNews';
 import Loading from '../../Shared/Loading/Loading';
 
@@ -12,8 +11,6 @@ const NewsDetails = () => {
     const [news, setNews] = useState({})
     console.log(news)
     const param = useParams();
-  
-    const [loading] = useAuthState(auth)
 
     const { name } = param;
     console.log(name)
@@ -29,7 +26,7 @@ const NewsDetails = () => {
     }
 
     return (
-        <div className='my-5'>
+        <div className='my-5 h-screen'>
             <h2 className='text-3xl font-bold text-center'>Title: <span className='text-error'>{news?.title}</span></h2>
              <div class="hero my-16 min-h-screen bg-base-100">
                 <div class="hero-content flex-col lg:flex-row-reverse">
