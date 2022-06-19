@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Getting Started with StoryTeller
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions to download this application
 
-## Available Scripts
+- Download the app or clone it from https://github.com/trshawonbd/strotyteller code option, click on code and copy the link https://github.com/trshawonbd/strotyteller.git
+- Go your command line and type `git clone https://github.com/trshawonbd/strotyteller.git`
+- Type `cd storyteller` on your same command line
+- Now type `npm init`
+- Now type `npm run start`
 
-In the project directory, you can run:
+## Instructions to use this application
 
-### `npm start`
+- After loading the homepage please select your theme depending your choice. You will get this option just beside login option.
+- You can login by cliccking on `Login` option if you have an existed account.
+- If you have no account, you will see an option in the Login option after the `login button` named `create new account`.
+- After clicking on `create new account`, you will see few options to register like `Name`, `email` and `authetication key`.
+- This `authentication key` should be generated from other sources, don't worry. You will see the option named `You will get authentication key from here`. Click on here and it will redirect you to other pages and register your self and there you will get and authentication key.
+- After getting this authetication key just put on the field of `authentication key` along with name and email.
+- Finally your register process has been done and iff you have a valid authentication key you will be redirected to the `all news` tab and able to see all news.
+- There can click on `details` to see the specific news or able to go the profile
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

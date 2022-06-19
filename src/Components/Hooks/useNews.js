@@ -16,6 +16,7 @@ const useNews = () => {
             })
 
     }, [formattedDate])
+    console.log(allnews)
     return [allnews, setAllnews];
 };
 
