@@ -17,5 +17,7 @@
 - This `authentication key` should be generated from other sources, don't worry. You will see the option named `You will get authentication key from here`. Click on here and it will redirect you to other pages and register your self and there you will get and authentication key.
 - After getting this authetication key just put on the field of `authentication key` along with name and email.
 - Finally your register process has been done and iff you have a valid authentication key you will be redirected to the `all news` tab and able to see all news.
-- There can click on `details` to see the specific news or able to go the profile
+- There you can click on `details` to see the specific news or able to go the `check out your profile` to see your details.
+- You can change your name but it is recommended not to change `email` and `authentication key`
+- Here you will have a `search option` where you can search any news with the title.  
 
